@@ -1,0 +1,16 @@
+{
+  "model": "unperturbed_chen2024_mockstream_S0",
+  "N_particles": 12004,
+  "M_prog_Msun": 20000.0,
+  "r_half_pc": 20.0,
+  "plummer_b_pc": 15.328418689747771,
+  "T_strip_Myr": 1500.0,
+  "dt_Myr": 0.5,
+  "release_cadence_Myr": 0.5,
+  "random_seed": 314159,
+  "potential": "gala.MilkyWayPotential(version='v2')",
+  "stream_df": "ChenStreamDF (Chen et al. 2024)",
+  "progenitor_potential": "PlummerPotential",
+  "gd1_frame": "GD1Koposov10",
+  "anchor_phi1_deg": -30.0
+}

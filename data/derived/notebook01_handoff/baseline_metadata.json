@@ -1,0 +1,10 @@
+{
+  "milky_way_potential": "gala.MilkyWayPotential(version='v2')",
+  "galactocentric_frame_defaults": "v4.0",
+  "main_phi1_range_deg": [
+    -60.0,
+    0.0
+  ],
+  "profile_bin_width_deg": 2.0,
+  "anchor_phi1_deg": -30.0
+}
