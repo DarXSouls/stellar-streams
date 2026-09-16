@@ -47,9 +47,9 @@ The analysis considers observables including:
 
 The current validation work emphasizes the region
 
-\[
--60^\circ \leq \phi_1 \leq 0^\circ,
-\]
+$$
+-60^\circ \leq \phi_1 \leq 0^\circ
+$$
 
 where the observational constraints used by the project are best established.
 
