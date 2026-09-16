@@ -1,0 +1,36 @@
+{
+  "N_96k": 96032,
+  "N_192k": 192064,
+  "results": {
+    "phi2_deg": {
+      "rms_difference": 0.004910944155264117,
+      "correlation": 0.9898584713338292,
+      "max_difference": 0.01252903561678309,
+      "n_bins": 30
+    },
+    "distance_kpc": {
+      "rms_difference": 0.0017968059040352256,
+      "correlation": 0.9957259684985476,
+      "max_difference": 0.004426057816820261,
+      "n_bins": 30
+    },
+    "pm1_masyr": {
+      "rms_difference": 0.0032387860428023546,
+      "correlation": 0.9950727253528345,
+      "max_difference": 0.009624556821023589,
+      "n_bins": 30
+    },
+    "pm2_masyr": {
+      "rms_difference": 0.0008115739235093303,
+      "correlation": 0.9967629435151056,
+      "max_difference": 0.0024945076873241767,
+      "n_bins": 30
+    },
+    "rv_kms": {
+      "rms_difference": 0.14322164437005705,
+      "correlation": 0.6792207941822375,
+      "max_difference": 0.434308533386762,
+      "n_bins": 30
+    }
+  }
+}

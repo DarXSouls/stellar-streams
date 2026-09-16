@@ -1,0 +1,23 @@
+{
+  "experiment": "DM canonical high-resolution",
+  "N_particles": 192064,
+  "M_prog_Msun": 20000.0,
+  "r_half_pc": 20.0,
+  "T_strip_Myr": 1500.0,
+  "dt_Myr": 0.5,
+  "release_cadence_Myr": 0.5,
+  "random_seed": 314159,
+  "potential": "gala.MilkyWayPotential(version='v2')",
+  "stream_df": "ChenStreamDF",
+  "progenitor_potential": "PlummerPotential",
+  "gd1_frame": "GD1Koposov10",
+  "anchor_phi1_deg": -30.0,
+  "science_region_deg": [
+    -60.0,
+    0.0
+  ],
+  "profile_bin_width_deg": 2.0,
+  "rv_profile_bin_width_deg": 4.0,
+  "q_constraint": "reject-and-redraw for q <= 0",
+  "resolution_status": "192k numerical reference"
+}

@@ -1,0 +1,8 @@
+{
+  "primary_resolution_deg": 2.0,
+  "rv_resolution_deg": 4.0,
+  "rv_corr_1deg": 0.5624745634697262,
+  "rv_corr_2deg": 0.6792207941822375,
+  "rv_corr_4deg": 0.9553730001920141,
+  "status": "large_scale_converged"
+}
