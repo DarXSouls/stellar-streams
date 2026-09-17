@@ -1,0 +1,50 @@
+{
+  "product": "GD-1 GMC perturbation fingerprint sweep",
+  "resolution": "192k",
+  "N_realized": 192064,
+  "integration_timestep_Myr": 0.5,
+  "release_cadence_Myr": 0.5,
+  "stream_duration_Myr": 1500.0,
+  "progenitor_mass_Msun": 20000.0,
+  "progenitor_r_half_pc": 20.0,
+  "potential": "gala.MilkyWayPotential(version='v2')",
+  "stream_model": "ChenStreamDF + MockStreamGenerator",
+  "progenitor_potential": "PlummerPotential",
+  "frame": "GD1Koposov10",
+  "gmc_profile": "Plummer",
+  "gmc_relative_velocity_kms": 300.0,
+  "gmc_encounter_time_Myr": -500.0,
+  "random_seed": 314159,
+  "cases": [
+    {
+      "case": "G1",
+      "mass_Msun": 1000000.0,
+      "scale_kpc": 0.025,
+      "impact_kpc": 0.0933
+    },
+    {
+      "case": "G2",
+      "mass_Msun": 2000000.0,
+      "scale_kpc": 0.025,
+      "impact_kpc": 0.19682
+    },
+    {
+      "case": "G3",
+      "mass_Msun": 2000000.0,
+      "scale_kpc": 0.05,
+      "impact_kpc": 0.1866
+    },
+    {
+      "case": "G4",
+      "mass_Msun": 2000000.0,
+      "scale_kpc": 0.075,
+      "impact_kpc": 0.16614
+    },
+    {
+      "case": "G5",
+      "mass_Msun": 4000000.0,
+      "scale_kpc": 0.05,
+      "impact_kpc": 0.39365
+    }
+  ]
+}
