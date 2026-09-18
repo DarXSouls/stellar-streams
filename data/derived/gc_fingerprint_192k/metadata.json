@@ -1,0 +1,99 @@
+{
+  "project": "stellar_streams",
+  "experiment": {
+    "name": "GD-1 GC perturbation fingerprint",
+    "notebook": "05_gc_perturbation_engine",
+    "description": "Production GD-1-like stellar-stream perturbations from compact Plummer globular-cluster perturbers."
+  },
+  "numerical_configuration": {
+    "n_particles": 192064,
+    "dt_myr": 0.5,
+    "release_cadence_myr": 0.5,
+    "stripping_duration_myr": 1500.0,
+    "integrator": "leapfrog",
+    "random_seed": 314159
+  },
+  "progenitor": {
+    "mass_msun": 20000.0,
+    "half_mass_radius_pc": 20.0,
+    "plummer_b_pc": 15.328418689747771
+  },
+  "gd1_anchor": {
+    "phi1_deg": -30.0,
+    "phi2_deg": 0.0931,
+    "distance_kpc": 7.62,
+    "pm1_masyr": -12.7801,
+    "pm2_masyr": -3.0048,
+    "rv_kms": -86.56
+  },
+  "galactic_potential": {
+    "name": "MilkyWayPotential",
+    "version": "v2"
+  },
+  "encounter": {
+    "relative_speed_kms": 300.0,
+    "encounter_time_myr": -500.0
+  },
+  "gc_sweep": [
+    {
+      "case": "G1",
+      "mass_msun": 500000.0,
+      "plummer_scale_kpc": 0.005,
+      "impact_parameter_kpc": 0.04949489742783178,
+      "impulse_ratio_to_dm": 1.0,
+      "stream_file": "S_GC_G1_192k.npz"
+    },
+    {
+      "case": "G2",
+      "mass_msun": 1000000.0,
+      "plummer_scale_kpc": 0.005,
+      "impact_parameter_kpc": 0.099749371855331,
+      "impulse_ratio_to_dm": 0.9999999999999998,
+      "stream_file": "S_GC_G2_192k.npz"
+    },
+    {
+      "case": "G3",
+      "mass_msun": 1000000.0,
+      "plummer_scale_kpc": 0.01,
+      "impact_parameter_kpc": 0.09898979485566356,
+      "impulse_ratio_to_dm": 1.0,
+      "stream_file": "S_GC_G3_192k.npz"
+    },
+    {
+      "case": "G4",
+      "mass_msun": 2000000.0,
+      "plummer_scale_kpc": 0.01,
+      "impact_parameter_kpc": 0.199498743710662,
+      "impulse_ratio_to_dm": 0.9999999999999998,
+      "stream_file": "S_GC_G4_192k.npz"
+    },
+    {
+      "case": "G5",
+      "mass_msun": 2000000.0,
+      "plummer_scale_kpc": 0.02,
+      "impact_parameter_kpc": 0.19797958971132712,
+      "impulse_ratio_to_dm": 1.0,
+      "stream_file": "S_GC_G5_192k.npz"
+    }
+  ],
+  "analysis": {
+    "phi1_min_deg": -60.0,
+    "phi1_max_deg": 0.0,
+    "phi1_bin_width_deg": 2.0,
+    "n_phi1_bins": 30,
+    "bootstrap_realizations": 500,
+    "bootstrap_seed": 271828,
+    "robust_width": "1.4826 * MAD",
+    "density_response": "ln(N_GC / N_control)",
+    "phase_space_response": "GC - matched control",
+    "standardized_response": "Delta X / sigma_DeltaX",
+    "standardized_response_interpretation": "simulation-realization significance only; not observational detection significance"
+  },
+  "files": {
+    "control_stream": "S_control_192k.npz",
+    "profiles": "gc_profiles_192k.csv",
+    "responses": "gc_responses_192k.csv",
+    "amplitudes": "gc_fingerprint_amplitudes_192k.csv",
+    "shape_comparison": "gc_response_shape_comparison_192k.csv"
+  }
+}
