@@ -60,28 +60,33 @@ The response is measured through changes in:
 - Proper motion in `phi2`
 - Radial velocity
 
-For each observable, the perturbation response is evaluated as a function of `phi1`. Bootstrap resampling is used to estimate simulation-realization uncertainties.
+For each observable, the perturbation response is evaluated as a function of
+`phi1`. Bootstrap resampling is used to estimate simulation-realization
+uncertainties.
 
 For phase-space observables, standardized fingerprints are constructed as
 
-$$
-Z_X(\phi_1) =
+```math
+Z_X(\phi_1)
+=
 \frac{\Delta X(\phi_1)}
-{\sigma_{\Delta X}(\phi_1)} ,
-$$
+{\sigma_{\Delta X}(\phi_1)}.
+```
 
-where the resulting quantity describes the perturbation response relative to simulation-realization uncertainty. It is not an observational detection significance.
+where the resulting quantity describes the perturbation response relative to
+simulation-realization uncertainty. It is not an observational detection
+significance.
 
-Density perturbations are treated separately using the logarithmic response
+Density perturbations are treated separately using the logarithmic response.
 
-$$
+```math
 \Delta\ln\rho(\phi_1)
 =
 \ln\left[
 \frac{N_{\rm pert}(\phi_1)}
 {N_{\rm control}(\phi_1)}
 \right].
-$$
+```
 
 ## Perturber Experiments
 
