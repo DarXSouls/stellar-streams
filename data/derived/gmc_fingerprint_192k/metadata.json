@@ -1,50 +1,92 @@
 {
-  "product": "GD-1 GMC perturbation fingerprint sweep",
-  "resolution": "192k",
-  "N_realized": 192064,
-  "integration_timestep_Myr": 0.5,
-  "release_cadence_Myr": 0.5,
-  "stream_duration_Myr": 1500.0,
-  "progenitor_mass_Msun": 20000.0,
-  "progenitor_r_half_pc": 20.0,
-  "potential": "gala.MilkyWayPotential(version='v2')",
-  "stream_model": "ChenStreamDF + MockStreamGenerator",
-  "progenitor_potential": "PlummerPotential",
-  "frame": "GD1Koposov10",
-  "gmc_profile": "Plummer",
-  "gmc_relative_velocity_kms": 300.0,
-  "gmc_encounter_time_Myr": -500.0,
-  "random_seed": 314159,
-  "cases": [
+  "project": "stellar_streams",
+  "experiment": {
+    "name": "GD-1 GMC perturbation fingerprint",
+    "notebook": "04_gmc_perturbation_engine",
+    "description": "Production GD-1-like stellar-stream perturbations from compact Plummer giant molecular cloud perturbers."
+  },
+  "numerical_configuration": {
+    "n_particles": 192064,
+    "convergence_particles": 96032,
+    "dt_myr": 0.5,
+    "release_cadence_myr": 0.5,
+    "stripping_duration_myr": 1500.0,
+    "random_seed": 314159,
+    "integrator": "leapfrog"
+  },
+  "progenitor": {
+    "mass_msun": 20000.0,
+    "half_mass_radius_pc": 20.0,
+    "plummer_b_kpc": 0.015328418689747771
+  },
+  "galactic_potential": {
+    "name": "MilkyWayPotential",
+    "version": "v2"
+  },
+  "stream_frame": "GD1Koposov10",
+  "encounter": {
+    "relative_speed_kms": 300.0,
+    "encounter_time_myr": -500.0
+  },
+  "canonical_case": "G3",
+  "gmc_sweep": [
     {
       "case": "G1",
-      "mass_Msun": 1000000.0,
-      "scale_kpc": 0.025,
-      "impact_kpc": 0.0933
+      "mass_msun": 1000000.0,
+      "plummer_scale_kpc": 0.025,
+      "impact_parameter_kpc": 0.0933,
+      "impulse_ratio_to_dm": 1.0000117900639773
     },
     {
       "case": "G2",
-      "mass_Msun": 2000000.0,
-      "scale_kpc": 0.025,
-      "impact_kpc": 0.19682
+      "mass_msun": 2000000.0,
+      "plummer_scale_kpc": 0.025,
+      "impact_parameter_kpc": 0.19682,
+      "impulse_ratio_to_dm": 1.000022549029939
     },
     {
       "case": "G3",
-      "mass_Msun": 2000000.0,
-      "scale_kpc": 0.05,
-      "impact_kpc": 0.1866
+      "mass_msun": 2000000.0,
+      "plummer_scale_kpc": 0.05,
+      "impact_parameter_kpc": 0.1866,
+      "impulse_ratio_to_dm": 1.0000117900639773
     },
     {
       "case": "G4",
-      "mass_Msun": 2000000.0,
-      "scale_kpc": 0.075,
-      "impact_kpc": 0.16614
+      "mass_msun": 2000000.0,
+      "plummer_scale_kpc": 0.075,
+      "impact_parameter_kpc": 0.16614,
+      "impulse_ratio_to_dm": 1.0000150598150934
     },
     {
       "case": "G5",
-      "mass_Msun": 4000000.0,
-      "scale_kpc": 0.05,
-      "impact_kpc": 0.39365
+      "mass_msun": 4000000.0,
+      "plummer_scale_kpc": 0.05,
+      "impact_parameter_kpc": 0.39365,
+      "impulse_ratio_to_dm": 0.9999979518649849
     }
-  ]
+  ],
+  "analysis": {
+    "phi1_min_deg": -60.0,
+    "phi1_max_deg": 0.0,
+    "phi1_bin_width_deg": 2.0,
+    "n_phi1_bins": 51,
+    "rv_bin_width_deg": 4.0,
+    "n_rv_bins": 26,
+    "robust_width": "1.4826 * MAD",
+    "density_response": "ln(N_GMC / N_control)",
+    "phase_space_response": "GMC - matched control",
+    "rv_convergence_case": "G3"
+  },
+  "files": {
+    "phase_space_canonical_G3": "gmc_phase_space_responses_192k.csv",
+    "sweep_responses": "gmc_sweep_responses_192k.csv",
+    "rv_responses": "gmc_rv_response_192k.csv",
+    "density": "gmc_density_responses_192k.csv",
+    "amplitudes": "gmc_fingerprint_amplitudes_192k.csv",
+    "shape_comparison": "gmc_response_shape_comparison_192k.csv",
+    "resolution_convergence": "gmc_resolution_convergence_192k.json",
+    "dm_gmc_comparison": "dm_gmc_response_comparison_192k.csv",
+    "metadata": "metadata.json"
+  }
 }

@@ -1,0 +1,53 @@
+{
+  "production_particles": 192064,
+  "comparison_particles": 96032,
+  "dt_myr": 0.5,
+  "release_cadence_myr": 0.5,
+  "stripping_duration_myr": 1500.0,
+  "random_seed": 314159,
+  "main_bin_width_deg": 2.0,
+  "rv_bin_width_deg": 4.0,
+  "canonical_rv_convergence_case": "G3",
+  "results": [
+    {
+      "observable": "phi2_deg",
+      "bin_width_deg": 2.0,
+      "rms_difference": 0.005801774866631104,
+      "correlation": 0.98837307984909,
+      "max_abs_difference": 0.013320895988308878,
+      "n_bins": 30
+    },
+    {
+      "observable": "distance_kpc",
+      "bin_width_deg": 2.0,
+      "rms_difference": 0.0012310787088821728,
+      "correlation": 0.9966275845625197,
+      "max_abs_difference": 0.002725556264842055,
+      "n_bins": 30
+    },
+    {
+      "observable": "pm1_masyr",
+      "bin_width_deg": 2.0,
+      "rms_difference": 0.002707860023781316,
+      "correlation": 0.9965859017807074,
+      "max_abs_difference": 0.006488761512244423,
+      "n_bins": 30
+    },
+    {
+      "observable": "pm2_masyr",
+      "bin_width_deg": 2.0,
+      "rms_difference": 0.0010363224270113494,
+      "correlation": 0.9912974217965779,
+      "max_abs_difference": 0.002482911596882964,
+      "n_bins": 30
+    },
+    {
+      "observable": "rv_kms",
+      "bin_width_deg": 4.0,
+      "rms_difference": 0.2770237449539886,
+      "correlation": 0.9082830644282269,
+      "max_abs_difference": 0.7898612629184072,
+      "n_bins": 16
+    }
+  ]
+}

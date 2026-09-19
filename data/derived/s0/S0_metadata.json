@@ -1,6 +1,6 @@
 {
   "model": "unperturbed_chen2024_mockstream_S0",
-  "N_particles": 12004,
+  "N_particles": 192064,
   "M_prog_Msun": 20000.0,
   "r_half_pc": 20.0,
   "plummer_b_pc": 15.328418689747771,

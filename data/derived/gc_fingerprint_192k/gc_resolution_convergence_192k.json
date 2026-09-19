@@ -1,0 +1,298 @@
+{
+  "production_particles": 192064,
+  "comparison_particles": 96032,
+  "observables_2deg": [
+    "density",
+    "phi2",
+    "distance",
+    "pm1",
+    "pm2"
+  ],
+  "observable_rv": "rv",
+  "rv_bin_width_deg": 4.0,
+  "main_bin_width_deg": 2.0,
+  "cases": [
+    "G1",
+    "G2",
+    "G3",
+    "G4",
+    "G5"
+  ],
+  "metrics": [
+    "correlation",
+    "relative_rms",
+    "max_abs_difference"
+  ],
+  "results": [
+    {
+      "case": "G1",
+      "observable": "density",
+      "bin_width_deg": 2.0,
+      "n_bins": 30,
+      "correlation": 0.9898594103969233,
+      "relative_rms": 0.14193133730499763,
+      "max_abs_difference": 0.04402893445148848
+    },
+    {
+      "case": "G1",
+      "observable": "phi2",
+      "bin_width_deg": 2.0,
+      "n_bins": 30,
+      "correlation": 0.9918074476621523,
+      "relative_rms": 0.1033454116851181,
+      "max_abs_difference": 0.010833040041658526
+    },
+    {
+      "case": "G1",
+      "observable": "distance",
+      "bin_width_deg": 2.0,
+      "n_bins": 30,
+      "correlation": 0.9956656267492883,
+      "relative_rms": 0.0676288276016446,
+      "max_abs_difference": 0.0024686767293129463
+    },
+    {
+      "case": "G1",
+      "observable": "pm1",
+      "bin_width_deg": 2.0,
+      "n_bins": 30,
+      "correlation": 0.9948561894913223,
+      "relative_rms": 0.07739819548825091,
+      "max_abs_difference": 0.005444188976222009
+    },
+    {
+      "case": "G1",
+      "observable": "pm2",
+      "bin_width_deg": 2.0,
+      "n_bins": 30,
+      "correlation": 0.9925511059096761,
+      "relative_rms": 0.10174275341533084,
+      "max_abs_difference": 0.0024274322796511427
+    },
+    {
+      "case": "G2",
+      "observable": "density",
+      "bin_width_deg": 2.0,
+      "n_bins": 30,
+      "correlation": 0.9927658869483068,
+      "relative_rms": 0.11974395824379146,
+      "max_abs_difference": 0.04693890937885004
+    },
+    {
+      "case": "G2",
+      "observable": "phi2",
+      "bin_width_deg": 2.0,
+      "n_bins": 30,
+      "correlation": 0.9923399595349561,
+      "relative_rms": 0.10173019459906042,
+      "max_abs_difference": 0.014457369567393297
+    },
+    {
+      "case": "G2",
+      "observable": "distance",
+      "bin_width_deg": 2.0,
+      "n_bins": 30,
+      "correlation": 0.9952885117938083,
+      "relative_rms": 0.06857527508093768,
+      "max_abs_difference": 0.004681695496099536
+    },
+    {
+      "case": "G2",
+      "observable": "pm1",
+      "bin_width_deg": 2.0,
+      "n_bins": 30,
+      "correlation": 0.996214772592798,
+      "relative_rms": 0.06585910503012257,
+      "max_abs_difference": 0.006580774041180959
+    },
+    {
+      "case": "G2",
+      "observable": "pm2",
+      "bin_width_deg": 2.0,
+      "n_bins": 30,
+      "correlation": 0.9909649704306726,
+      "relative_rms": 0.11964202862843354,
+      "max_abs_difference": 0.0025287677724330493
+    },
+    {
+      "case": "G3",
+      "observable": "density",
+      "bin_width_deg": 2.0,
+      "n_bins": 30,
+      "correlation": 0.9930018758890647,
+      "relative_rms": 0.11789022712013224,
+      "max_abs_difference": 0.04533038398156149
+    },
+    {
+      "case": "G3",
+      "observable": "phi2",
+      "bin_width_deg": 2.0,
+      "n_bins": 30,
+      "correlation": 0.9923925560742963,
+      "relative_rms": 0.1012840447669458,
+      "max_abs_difference": 0.014492419683086899
+    },
+    {
+      "case": "G3",
+      "observable": "distance",
+      "bin_width_deg": 2.0,
+      "n_bins": 30,
+      "correlation": 0.9950932808103105,
+      "relative_rms": 0.06979961866812975,
+      "max_abs_difference": 0.004879991622619428
+    },
+    {
+      "case": "G3",
+      "observable": "pm1",
+      "bin_width_deg": 2.0,
+      "n_bins": 30,
+      "correlation": 0.9961352072852667,
+      "relative_rms": 0.06641694574190787,
+      "max_abs_difference": 0.00687850796344236
+    },
+    {
+      "case": "G3",
+      "observable": "pm2",
+      "bin_width_deg": 2.0,
+      "n_bins": 30,
+      "correlation": 0.9913545789118227,
+      "relative_rms": 0.1169143065177949,
+      "max_abs_difference": 0.002504560630481656
+    },
+    {
+      "case": "G4",
+      "observable": "density",
+      "bin_width_deg": 2.0,
+      "n_bins": 30,
+      "correlation": 0.9867254189987594,
+      "relative_rms": 0.16180312465523822,
+      "max_abs_difference": 0.04824550987477197
+    },
+    {
+      "case": "G4",
+      "observable": "phi2",
+      "bin_width_deg": 2.0,
+      "n_bins": 30,
+      "correlation": 0.9897913769075869,
+      "relative_rms": 0.1230744556558433,
+      "max_abs_difference": 0.01132802279478562
+    },
+    {
+      "case": "G4",
+      "observable": "distance",
+      "bin_width_deg": 2.0,
+      "n_bins": 30,
+      "correlation": 0.9964101145100847,
+      "relative_rms": 0.06112745766048846,
+      "max_abs_difference": 0.003034722897464981
+    },
+    {
+      "case": "G4",
+      "observable": "pm1",
+      "bin_width_deg": 2.0,
+      "n_bins": 30,
+      "correlation": 0.99646116914993,
+      "relative_rms": 0.06628455375267608,
+      "max_abs_difference": 0.00645106931392192
+    },
+    {
+      "case": "G4",
+      "observable": "pm2",
+      "bin_width_deg": 2.0,
+      "n_bins": 30,
+      "correlation": 0.990598649201869,
+      "relative_rms": 0.13134550652319243,
+      "max_abs_difference": 0.00247014463338191
+    },
+    {
+      "case": "G5",
+      "observable": "density",
+      "bin_width_deg": 2.0,
+      "n_bins": 30,
+      "correlation": 0.9868368185292644,
+      "relative_rms": 0.16109223826280838,
+      "max_abs_difference": 0.047512841021222434
+    },
+    {
+      "case": "G5",
+      "observable": "phi2",
+      "bin_width_deg": 2.0,
+      "n_bins": 30,
+      "correlation": 0.9895039550041278,
+      "relative_rms": 0.12420148753842208,
+      "max_abs_difference": 0.01084885358727039
+    },
+    {
+      "case": "G5",
+      "observable": "distance",
+      "bin_width_deg": 2.0,
+      "n_bins": 30,
+      "correlation": 0.9966067924248316,
+      "relative_rms": 0.05958334626522886,
+      "max_abs_difference": 0.0028551195518078387
+    },
+    {
+      "case": "G5",
+      "observable": "pm1",
+      "bin_width_deg": 2.0,
+      "n_bins": 30,
+      "correlation": 0.9963445205369474,
+      "relative_rms": 0.0673569482440875,
+      "max_abs_difference": 0.0068095593664025955
+    },
+    {
+      "case": "G5",
+      "observable": "pm2",
+      "bin_width_deg": 2.0,
+      "n_bins": 30,
+      "correlation": 0.9908265045200703,
+      "relative_rms": 0.13122785782202534,
+      "max_abs_difference": 0.0025231295285932376
+    },
+    {
+      "case": "G1",
+      "observable": "rv",
+      "bin_width_deg": 4.0,
+      "n_bins": 15,
+      "correlation": 0.9868976042379098,
+      "relative_rms": 0.17174899929394472,
+      "max_abs_difference": 0.4000746273819189
+    },
+    {
+      "case": "G2",
+      "observable": "rv",
+      "bin_width_deg": 4.0,
+      "n_bins": 15,
+      "correlation": 0.9917291193187245,
+      "relative_rms": 0.12933917268884584,
+      "max_abs_difference": 0.36328941909476953
+    },
+    {
+      "case": "G3",
+      "observable": "rv",
+      "bin_width_deg": 4.0,
+      "n_bins": 15,
+      "correlation": 0.9919782209426729,
+      "relative_rms": 0.12754216337902935,
+      "max_abs_difference": 0.37396508158857955
+    },
+    {
+      "case": "G4",
+      "observable": "rv",
+      "bin_width_deg": 4.0,
+      "n_bins": 15,
+      "correlation": 0.9810712165690944,
+      "relative_rms": 0.2057042584351471,
+      "max_abs_difference": 0.35508028748231624
+    },
+    {
+      "case": "G5",
+      "observable": "rv",
+      "bin_width_deg": 4.0,
+      "n_bins": 15,
+      "correlation": 0.9807255962303731,
+      "relative_rms": 0.20630368094370874,
+      "max_abs_difference": 0.3698023290594321
+    }
+  ]
+}

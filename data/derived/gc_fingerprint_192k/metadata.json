@@ -81,19 +81,47 @@
     "phi1_max_deg": 0.0,
     "phi1_bin_width_deg": 2.0,
     "n_phi1_bins": 30,
+    "rv_bin_width_deg": 4.0,
+    "n_rv_bins": 15,
     "bootstrap_realizations": 500,
     "bootstrap_seed": 271828,
     "robust_width": "1.4826 * MAD",
     "density_response": "ln(N_GC / N_control)",
     "phase_space_response": "GC - matched control",
     "standardized_response": "Delta X / sigma_DeltaX",
-    "standardized_response_interpretation": "simulation-realization significance only; not observational detection significance"
+    "standardized_response_interpretation": "simulation-realization significance only; not observational detection significance",
+    "rv_binning_note": "Radial velocity uses the dedicated 4-degree phi1 grid because the RV response is more realization-sensitive at 2-degree resolution."
+  },
+  "resolution_convergence": {
+    "production_particles": 192064,
+    "comparison_particles": 96032,
+    "main_bin_width_deg": 2.0,
+    "rv_bin_width_deg": 4.0,
+    "observables_2deg": [
+      "density",
+      "phi2",
+      "distance",
+      "pm1",
+      "pm2"
+    ],
+    "observable_rv": "rv",
+    "metrics": [
+      "correlation",
+      "relative_rms",
+      "max_abs_difference"
+    ],
+    "interpretation": "Numerical resolution-convergence diagnostic comparing the 96k and 192k matched stream responses. The comparison assesses response-curve stability under particle-number increase and is not an observational uncertainty estimate.",
+    "csv_file": "gc_resolution_convergence_192k.csv",
+    "json_file": "gc_resolution_convergence_192k.json"
   },
   "files": {
     "control_stream": "S_control_192k.npz",
     "profiles": "gc_profiles_192k.csv",
     "responses": "gc_responses_192k.csv",
+    "rv_responses": "gc_response_rv_192k.csv",
     "amplitudes": "gc_fingerprint_amplitudes_192k.csv",
-    "shape_comparison": "gc_response_shape_comparison_192k.csv"
+    "shape_comparison": "gc_response_shape_comparison_192k.csv",
+    "resolution_convergence_csv": "gc_resolution_convergence_192k.csv",
+    "resolution_convergence_json": "gc_resolution_convergence_192k.json"
   }
 }
